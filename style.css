@@ -1,0 +1,206 @@
+/* -------------------------
+  GENERAL RESET
+------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fffaf6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -------------------------
+  NAVBAR
+------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ff6f61; /* main brand color from logo */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #fff200;
+}
+
+/* -------------------------
+  HERO SECTION
+------------------------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ffe3d8, #fffaf6);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  background-color: #ff6f61;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff856f;
+  transform: scale(1.05);
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+/* -------------------------
+  FEATURED PRODUCTS
+------------------------- */
+.featured-products {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff6f61;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-weight: 700;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.product-card button:hover {
+  transform: scale(1.05);
+  background-color: #ff856f;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* -------------------------
+  ABOUT / CONTACT
+------------------------- */
+.about, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2, .contact h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+
+/* -------------------------
+  FOOTER
+------------------------- */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #ff6f61;
+  color: white;
+}
+
+/* -------------------------
+  SHOP / CART PAGES
+------------------------- */
+.shop-container, .cart-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  }
